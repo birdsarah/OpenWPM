@@ -24,15 +24,15 @@ for i in range(NUM_BROWSERS):
     # Record JS Web API calls
     browser_params[i]['js_instrument'] = True
     # Enable flash for all three browsers
-    browser_params[i]['disable_flash'] = False
+    browser_params[i]['disable_flash'] = True
     # Run headless crawl
     browser_params[i]['headless'] = True
     browser_params[i]['extension_enabled'] = True
     browser_params[i]['save_javascript'] = True
 
 # Update TaskManager configuration (use this for crawl-wide settings)
-manager_params['data_directory'] = 'crawls/crawl-data-3/'
-manager_params['log_directory'] = 'crawls/crawl-data-3/'
+manager_params['data_directory'] = 'crawls/crawl-data-4/'
+manager_params['log_directory'] = 'crawls/crawl-data-4/'
 
 # Instantiates the measurement platform
 # Commands time out by default after 60 seconds
