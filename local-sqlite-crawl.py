@@ -31,8 +31,8 @@ for i in range(NUM_BROWSERS):
     browser_params[i]['save_javascript'] = True
 
 # Update TaskManager configuration (use this for crawl-wide settings)
-manager_params['data_directory'] = 'crawls/crawl-data-4/'
-manager_params['log_directory'] = 'crawls/crawl-data-4/'
+manager_params['data_directory'] = 'crawls/crawl-data-5/'
+manager_params['log_directory'] = 'crawls/crawl-data-5/'
 
 # Instantiates the measurement platform
 # Commands time out by default after 60 seconds
