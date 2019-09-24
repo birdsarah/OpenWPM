@@ -28,11 +28,11 @@ for i in range(NUM_BROWSERS):
     # Run headless crawl
     browser_params[i]['headless'] = True
     browser_params[i]['extension_enabled'] = True
-    browser_params[i]['save_javascript'] = True
+    browser_params[i]['save_content'] = False
 
 # Update TaskManager configuration (use this for crawl-wide settings)
-manager_params['data_directory'] = 'crawls/crawl-data-5/'
-manager_params['log_directory'] = 'crawls/crawl-data-5/'
+manager_params['data_directory'] = 'crawls/crawl-data-6/'
+manager_params['log_directory'] = 'crawls/crawl-data-6/'
 
 # Instantiates the measurement platform
 # Commands time out by default after 60 seconds
