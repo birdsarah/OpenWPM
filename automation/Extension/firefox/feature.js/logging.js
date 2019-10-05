@@ -36,6 +36,7 @@ export class Logger {
             '_component': 'WebExtension::Start',
             'visit_id': visitID,
             'crawl_id': crawlID,
+            'time_stamp': new Date().toISOString()
         };
         this.send(JSON.stringify(start_msg));
     }
